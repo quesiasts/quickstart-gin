@@ -12,6 +12,7 @@ func main() {
 	router.GET("/albums/:id", getAlbumByID)
 	router.POST("/albums", postAlbums)
 
+	//adicionando na porta 3600 para não dar erro de administrador
 	router.Run("localhost:3600")
 }
 
